@@ -3,21 +3,21 @@ Example: 4 is an integer literal.
 
 Identifiers: Identifiers are the names of variables, methods, classes, packages and interfaces
 
-Octal values are denoted in Java by a leading zero. Normal decimal numbers cannot have a leading zero.
+//Octal values are denoted in Java by a leading zero. Normal decimal numbers cannot have a leading zero.
 Thus, the seemingly valid value 09 will produce an error from the compiler, since 9 is outside of octal’s 0 to 7 range.
 
-You signify a hexadecimal constant with a leading zero-x, (0x or 0X).
-The range of a hexadecimal digit is 0 to 15, so A through F (or a through f ) are substituted for 10 through 15.
+//You signify a hexadecimal constant with a leading zero-x, (0x or 0X).
+//The range of a hexadecimal digit is 0 to 15, so A through F (or a through f ) are substituted for 10 through 15.
 
 When a literal value is assigned to a byte or short variable, no error is generated if the literal value is within the
 range of the target type. An integer literal can always be assigned to a long variable. However, to specify a long
 literal, you will need to explicitly tell the compiler that the literal value is of type long. You do this by appending
 an upper- or lowercase L to the literal.
 
-Beginning with JDK 7, you can also specify integer literals using binary. To do so, prefix the value with 0b or 0B.
+//Beginning with JDK 7, you can also specify integer literals using binary. To do so, prefix the value with 0b or 0B.
 For example, this specifies the decimal value 10 using a binary literal: int x = 0b1010;
 
-int x = 123_456_789;
+//int x = 123_456_789;
 the value given to x will be 123,456,789. The underscores will be ignored.
 
 Floating-point literals in Java default to double precision.
@@ -38,10 +38,10 @@ The values of true and false do not convert into any numerical representation.
 The true literal in Java does not equal 1, nor does the false literal equal 0.
 
 As you may know, in some other languages, including C/C++, strings are implemented as arrays of characters.
-However, this is not the case in Java. Strings are actually object types.
-Because Java implements strings as objects, Java includes extensive string-handling capabilities that are both powerful
+However, this is not the case in Java.// Strings are actually object types.
+//Because, Java implements strings as objects, Java includes extensive string-handling capabilities that are both powerful
 and easy to use.
 
-The remainder a % b is defined such that (a / b) * b + a % b is always equal to a :
+////The remainder a % b is defined such that (a / b) * b + a % b is always equal to a :
 System.out.println(-15 % 2);    // -1
 System.out.println(15 % -2);    // 1
